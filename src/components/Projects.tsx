@@ -1,7 +1,7 @@
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Github, MessageSquare, Brain, Home } from 'lucide-react';
+import { ExternalLink, Github, MessageSquare, Brain, Home, FileText } from 'lucide-react';
 
 const projects = [
   {
@@ -11,6 +11,7 @@ const projects = [
     technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'WebRTC'],
     highlights: ['Real-time messaging', 'Dynamic rooms', 'Backend APIs'],
     color: 'primary',
+    ieeeLink: null,
   },
   {
     title: 'Oral Cancer Classification',
@@ -19,6 +20,7 @@ const projects = [
     technologies: ['Python', 'TensorFlow', 'Keras', 'CNNs', 'Transfer Learning'],
     highlights: ['IEEE Published', '85% Accuracy', 'Medical AI'],
     color: 'accent',
+    ieeeLink: 'https://ieeexplore.ieee.org/document/11140815',
   },
   {
     title: 'House Rental Management System',
@@ -27,6 +29,7 @@ const projects = [
     technologies: ['MongoDB', 'Express.js', 'React', 'Node.js'],
     highlights: ['Full-stack', 'Auth & RBAC', 'Responsive UI'],
     color: 'primary',
+    ieeeLink: null,
   },
 ];
 
@@ -99,6 +102,14 @@ const Projects = () => {
                       Code
                     </a>
                   </Button>
+                  {project.ieeeLink && (
+                    <Button variant="outline" size="sm" className="flex-1 border-accent/50 text-accent hover:bg-accent/20" asChild>
+                      <a href={project.ieeeLink} target="_blank" rel="noopener noreferrer">
+                        <FileText size={16} />
+                        IEEE
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             ))}
