@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, Mail, ChevronDown, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profileImage from '@/assets/profile.jpeg';
 
@@ -48,6 +48,12 @@ const Hero = () => {
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="#projects">View Projects</a>
+              </Button>
+              <Button variant="glow" size="lg" asChild>
+                <a href="/resume/Sandeep_Bhanage_Resume.pdf" download>
+                  <Download size={18} />
+                  Resume
+                </a>
               </Button>
             </div>
 
