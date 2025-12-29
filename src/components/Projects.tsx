@@ -12,6 +12,7 @@ const projects = [
     highlights: ['Real-time messaging', 'Dynamic rooms', 'Backend APIs'],
     color: 'primary',
     ieeeLink: null,
+    githubLink: 'https://github.com/SandeepBhanage12/Group-Study-Platform',
   },
   {
     title: 'Oral Cancer Classification',
@@ -21,6 +22,7 @@ const projects = [
     highlights: ['IEEE Published', '85% Accuracy', 'Medical AI'],
     color: 'accent',
     ieeeLink: 'https://ieeexplore.ieee.org/document/11140815',
+    githubLink: 'https://github.com/SandeepBhanage12',
   },
   {
     title: 'House Rental Management System',
@@ -30,6 +32,7 @@ const projects = [
     highlights: ['Full-stack', 'Auth & RBAC', 'Responsive UI'],
     color: 'primary',
     ieeeLink: null,
+    githubLink: 'https://github.com/SandeepBhanage12/findMyStay',
   },
 ];
 
@@ -97,7 +100,7 @@ const Projects = () => {
                 {/* Actions */}
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm" className="flex-1" asChild>
-                    <a href="https://github.com/SandeepBhanage12" target="_blank" rel="noopener noreferrer">
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                       <Github size={16} />
                       Code
                     </a>
