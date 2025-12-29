@@ -127,7 +127,7 @@ const Contact = () => {
                   <Github size={24} className="text-muted-foreground hover:text-primary transition-colors" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/sandeep-bhanage"
+                  href="https://www.linkedin.com/in/sandeep-bhanage-939124273/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-4 glass rounded-xl hover:border-primary/50 transition-all duration-300 hover:scale-105"
